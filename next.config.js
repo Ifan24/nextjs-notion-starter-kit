@@ -4,6 +4,15 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://www.ruiqi.io/',
+        permanent: true
+      }
+    ]
+  },
   staticPageGenerationTimeout: 300,
   images: {
     domains: [
