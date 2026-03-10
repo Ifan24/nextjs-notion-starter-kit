@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.ruiqi.io/",
+      "permanent": true
+    }
+  ]
+}
